@@ -1,5 +1,6 @@
-const multi = require('./toBe');
+const compras = require('./toContain');
 
-test ("multiplica os valores de A, B e C entre si", () => {
-    expect(multi(3, 4, 9)).toBe(108);
+test ("to contain", () => {
+    expect(compras).toContain('arroz');
+    expect(compras).toContain('feijao');
 });
